@@ -1,0 +1,20 @@
+.CatSearch {
+    width: 100px;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.CatSearch_form input {
+    margin: 0 auto;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: solid 3px darkblue;
+    padding-bottom: 8px;
+    width: 50px;
+    font-weight: 200px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: white;
+    margin-right: 10px;
+}
