@@ -1,6 +1,7 @@
 import React from "react"
 
-const CatViews = () => {
+const CatViews = (props) => {
+    console.log(props)
    return ( 
     <div>
         view cats

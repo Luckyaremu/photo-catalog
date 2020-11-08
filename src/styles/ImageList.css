@@ -1,7 +1,6 @@
 .ImageList {
     display: flex;
     flex-direction: column;
-
     width: 100%;
     height: 100%;
 }
@@ -16,11 +15,12 @@
     -o-border-radius: 1px;
 }
 
-.ImageList_image{
+.ImageList_image {
     width: 100%;
+    height: 100%;
 }
 
-.ImageList_details{
+.ImageList_details {
     background: gray;
 }
 
