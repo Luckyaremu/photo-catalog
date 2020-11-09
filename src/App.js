@@ -8,7 +8,8 @@ const API_KEY = "19016639-23d93c3595b2b041b47534593";
 
 class App extends React.Component {
   state = {
-    images: [] 
+    images: [],
+    error: null 
   }
  handleGetRequest = async (e) => {
     e.preventDefault()
@@ -18,16 +19,23 @@ class App extends React.Component {
 
   const request = await fetch(url)
   const response = await request.json()
-  this.setState({images: response.hits})
-  console.log(this.state.images)
-  console.log(SearchTerm)
+  if (!SearchTerm){
+    this.setState({error: "please provide a name......."})
+  } else {
+    this.setState({images: response.hits, error: null })
+  }
+
  } 
 
   render() {
     return (
       <div>
         <CatSearch handleGetRequest={this.handleGetRequest}/>
+        {
+          this.state.error !== null?
+        <div>{this.state.error}</div> :
         <ImageList images={this.state.images}/>
+        }
       </div>
     )
   }
