@@ -1,44 +1,15 @@
-import './App.css';
-import React from "react"
-import CatSearch from "./components/CatSearch"
-import ImageList from "./components/ImageList"
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import ApiCall from './components/ApiCall';
+import CatViews from './container/CatViews';
 
-const API_KEY = "19016639-23d93c3595b2b041b47534593";
-
-
-class App extends React.Component {
-  state = {
-    images: [],
-    error: null 
-  }
- handleGetRequest = async (e) => {
-    e.preventDefault()
-  const SearchTerm = e.target.elements.searchValue.value
-  
-  const url = `https://pixabay.com/api/?key=${API_KEY}&q=${SearchTerm}&image_type=photo`
-
-  const request = await fetch(url)
-  const response = await request.json()
-  if (!SearchTerm){
-    this.setState({error: "please provide a name......."})
-  } else {
-    this.setState({images: response.hits, error: null })
-  }
-
- } 
-
-  render() {
-    return (
-      <div>
-        <CatSearch handleGetRequest={this.handleGetRequest}/>
-        {
-          this.state.error !== null?
-        <div>{this.state.error}</div> :
-        <ImageList images={this.state.images}/>
-        }
-      </div>
-    )
-  }
-}
+const App = () => (
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" component={ApiCall} exact />
+      <Route path="/image/:id" component={CatViews} />
+    </Switch>
+  </BrowserRouter>
+);
 
 export default App;
