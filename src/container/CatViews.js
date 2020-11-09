@@ -10,7 +10,7 @@ const CatViews = (props) => {
         <p>&copy:pixabay</p>
    <h4>credit: <span>{owner}</span></h4>
    <h4>Downlaod: <span><a target="_blank" href={pageURL}>Go to Download</a></span></h4>
-    <button> <link to="/">Home</link></button>
+    <button> <Link to="/">Home</Link></button>
     </div>
     )
 }

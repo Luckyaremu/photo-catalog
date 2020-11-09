@@ -9,7 +9,7 @@ const Router = () => {
       <BrowserRouter>
       <Switch>
           <Route path="/" component={App} exact />
-          <Route path="/image/:id" container={CatViews}/>
+          <Route path="/image/:id" component={CatViews}/>
       </Switch>
       </BrowserRouter>
     )
