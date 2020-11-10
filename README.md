@@ -1,6 +1,6 @@
 # Catalog of Dogs Cloths
 
-![App Demo](./src/image/Animated GIF-downsized_large.gif)
+![App Demo]("./src/image/Animated GIF-downsized_large.gif")
 
 First of all, you can find this project's requirements [here](https://www.notion.so/Catalogue-of-Dog-Clothes-8bf1512b8ab34fa28848beb8ab698a32).
 
