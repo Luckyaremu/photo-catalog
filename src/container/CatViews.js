@@ -10,35 +10,18 @@ const CatViews = props => {
   const {
     largeImageURL: image, tags, user: owner, pageURL,
   } = props.location.state.image;
+  
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-sm-4">
           <div className="CatView_container">
 
             <img src={image} alt={tags} className="CatView_image" />
-
-            <div className="CatView_copyright">
-              <p>&copy:pixabay</p>
-            </div>
-            <div className="CatView_text">
               <h4>
-                credit:
-                <span>{owner}</span>
+                Downlaod:<span><a target="_blank" href={pageURL}>Go to Download</a></span>
               </h4>
-              <h4>
-                Downlaod:
-                <span><a target="_blank" href={pageURL}>Go to Download</a></span>
-              </h4>
-              <button className="active_recipe_button">
-                {' '}
+              <button className="CatView_button">
                 <Link to="/">Home</Link>
               </button>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
   );
 };
 

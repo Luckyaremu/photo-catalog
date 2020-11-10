@@ -1,41 +1,21 @@
-.CatView__container {
+.CatView__container img {
+    height: 40%;
     width: 100%;
-    text-align: center;
-    color: #fff;
   }
-  
+  .CatView__container{
+    width: 100%;
+  }
+
   .CatView__image {
-    height: 10%;
+    height: 50%;
     width: 100%;
+    justify-content: center;
   }
-  
-  .CatView__copyright {
-    color: red;
-  }
-  
-  .CatView__text {
-    margin-top: 1rem;
-  }
-  
-  .CatView__text h4, h5, span {
-    letter-spacing: 1px;
-    color: #f39c12;
-  }
-  
-  .CatView__text h4 span {
-    font-weight: bold;
-    color: #c0392b;
-  }
-  
-  .CatView__text a {
-    font-weight: bold;
-    color: #c0392b;
-  }
-  
-  .CatView__text button {
+
+  .CatView_button {
     border: 0;
+    font-size: 30px;
     background: transparent;
-    border: solid 2px #34495e;
+    border: solid 5px red;
     margin-top: 10px;
   }
-  
