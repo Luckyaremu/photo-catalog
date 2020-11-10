@@ -13,7 +13,7 @@ const CatViews = props => {
         <div className="col-sm-12">
           <div className="CatView_container">
 
-            <img src={image} alt={tags} className="CatView_image" img-responsive />
+            <img src={image} alt={tags} className="CatView_image"/>
 
             <div className="CatView_copyright">
               <p>&copy:pixabay</p>

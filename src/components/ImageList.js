@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 import imageList from '../styles/ImageList.css';
 
 const ImageList = props => {
@@ -28,4 +29,8 @@ const ImageList = props => {
     </div>
   );
 };
-export default ImageList;
+
+const mapStateToProps = state => ({
+  ImageList: state.ImageList,
+});
+export default connect(mapStateToProps)(ImageList);

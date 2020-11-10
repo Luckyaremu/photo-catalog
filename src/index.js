@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import Router from './App';
+import { Provider } from 'react-redux';
+import { createStore } from "redux"
+import App from './App';
+import RootReducer from "../src/reducer/RootReducer"
+
+const store = createStore(RootReducer);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root'),
 );
 
