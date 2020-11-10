@@ -1,3 +1,5 @@
+/* eslint-disable no-case-declarations */
+/* eslint-disable consistent-return */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import catViews from '../styles/CatViews.css';
