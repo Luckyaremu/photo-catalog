@@ -29,11 +29,9 @@
   @media only screen and (max-width: 200px) {
     .CatSearch_form button {
       font-size: 10px;
-      border: solid 2px #34495e;
     }
     .CatSearch_form input {
       font-size: 10px;
-      border: solid 2px #34495e;
     }
     .CatSearch {
       font-size: 10px;
