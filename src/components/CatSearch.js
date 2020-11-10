@@ -1,5 +1,4 @@
-/* eslint-disable no-case-declarations */
-/* eslint-disable consistent-return */
+/* eslint-disable */
 import React from 'react';
 import catSearch from '../styles/CatSearch.css';
 
