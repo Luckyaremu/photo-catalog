@@ -1,6 +1,7 @@
 # Catalog of Dogs Cloths
 
-![App Demo]("/src/image/screenshot.gif")
+![App Demo]("src\image\screenshot.gif")
+
 
 First of all, you can find this project's requirements [here](https://www.notion.so/Catalogue-of-Dog-Clothes-8bf1512b8ab34fa28848beb8ab698a32).
 
@@ -47,7 +48,7 @@ In this project I:
 
 ## Live Demo
 
-[Click here to see it on Netlify!]()
+[Click here to see it on Netlify!](https://relaxed-ritchie-874dc6.netlify.app/)
 
 ## Getting Started
 
