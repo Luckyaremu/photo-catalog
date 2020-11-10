@@ -1,22 +1,16 @@
 .CatSearch {
-    width: 100px;
-    text-align: center;
-    margin-bottom: 3rem;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    padding-top: 10px;
+    width: 100%;
+    padding-bottom: 30px;
 }
 
 .CatSearch_form input {
-    margin: 0 auto;
-    background-color: transparent;
-    border: transparent;
-    border-bottom: solid 3px darkblue;
-    padding-bottom: 8px;
-    width: 50px;
-    font-weight: 200px;
-    font-size: 16px;
-    letter-spacing: 2px;
-    color: white;
-    margin-right: 10px;
+   font-size: larger;
+   background-color: white;
+   border: solid 5px #34495e;
 }
 
 .CatSearch_form input:focus {
@@ -26,9 +20,8 @@
   .CatSearch_form button {
     border: 0;
     width: 7%;
+    font-size: larger;
     position: absolute;
-    top: 4px;
-    background: transparent;
-    border: solid 2px #34495e;
-    color: #fff;
+    border: solid 5px #34495e;
+
   }

@@ -4,13 +4,13 @@
     color: #fff;
   }
   
-  .CatView__img {
-    height: 400px;
-    width: auto;
+  .CatView__image {
+    height: 10%;
+    width: 100%;
   }
   
   .CatView__copyright {
-    color: #8f8f8f;
+    color: red;
   }
   
   .CatView__text {

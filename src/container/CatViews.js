@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import catViews from '../styles/CatViews.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const CatViews = props => {
   console.log(props.location.state.image);
@@ -10,10 +12,10 @@ const CatViews = props => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-sm-12">
+        <div className="col-sm-4">
           <div className="CatView_container">
 
-            <img src={image} alt={tags} className="CatView_image"/>
+            <img src={image} alt={tags} className="CatView_image" />
 
             <div className="CatView_copyright">
               <p>&copy:pixabay</p>

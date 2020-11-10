@@ -1,12 +1,11 @@
 .ImageList {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    height: 100%;
 }
 .ImageList_container {
     border-radius: 1px;
     box-shadow: 1px 2px 34px -13px grey;
+    width: 100%;
+    height: 80%;
     text-align: left;
     overflow: hidden;
     -webkit-border-radius: 1px;
@@ -21,7 +20,8 @@
 }
 
 .ImageList_details {
-    background: gray;
+    font-size: larger;
+    margin-top: 3px;
 }
 
 .ImageList_details button {
@@ -29,4 +29,10 @@
     border: 0;
     background-color: orangered;
     color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.ImageList_details button:hover{
+    background-color: blue;
 }

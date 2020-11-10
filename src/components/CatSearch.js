@@ -1,5 +1,5 @@
 import React from 'react';
-// import catSearch from '../styles/CatSearch.css';
+import catSearch from '../styles/CatSearch.css';
 
 const CatSearch = ({ handleGetRequest }) => (
   <div className="CatSearch">
