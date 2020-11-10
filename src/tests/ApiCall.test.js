@@ -1,4 +1,7 @@
-import ApiCall from '../components/ApiCall';
+/* eslint-disable */
+import ApiCall from "../components/ApiCall";
+import React from 'react';
+import { render, screen } from './test-utils';
 
 describe('The data should be read from the API', () => {
   test('Should receive an object from the API', () => {

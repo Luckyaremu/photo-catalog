@@ -3,7 +3,7 @@ import { render as rtlRender } from '@testing-library/react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import PropTypes from 'prop-types';
-import reducer from '../reducers';
+import reducer from '../reducer/RootReducer';
 
 function render(
   ui,
@@ -13,12 +13,12 @@ function render(
     ...renderOptions
   } = {},
 ) {
-  function Wrapper({ children }) {
-    return <Provider store={store}>{children}</Provider>;
+  function Wrapper({ ImageList }) {
+    return <Provider store={store}>{ImageList}</Provider>;
   }
 
   Wrapper.propTypes = {
-    children: PropTypes.node.isRequired,
+    ImageList: PropTypes.node.isRequired,
   };
 
   return rtlRender(ui, { wrapper: Wrapper, ...renderOptions });

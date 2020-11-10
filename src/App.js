@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from 'react';
+import "./index"
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import ApiCall from './components/ApiCall';
 import CatViews from './container/CatViews';

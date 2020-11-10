@@ -2,6 +2,6 @@ const initState = {
   ImageList: [],
 };
 
-const RootReducer = (state = initState, action) => state;
+const RootReducer = (state = initState) => state;
 
 export default RootReducer;

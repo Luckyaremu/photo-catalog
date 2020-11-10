@@ -1,44 +1,43 @@
 .CatSearch {
-    display: flex;
-    justify-content: center;
-    font-size: larger;
-    padding-top: 10px;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+  padding-top: 10px;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
 }
 
 .CatSearch_form input {
-   font-size: larger;
-   background-color: white;
-   border: solid 5px #34495e;
+  font-size: larger;
+  background-color: white;
+  border: solid 5px #34495e;
 }
 
 .CatSearch_form input:focus {
-    outline: none;
-  }
-  
+  outline: none;
+}
+
+.CatSearch_form button {
+  font-size: larger;
+  position: absolute;
+  border: solid 5px #34495e;
+}
+
+@media only screen and (max-width: 200px) {
   .CatSearch_form button {
-    border: 0;
-    font-size: larger;
-    position: absolute;
-    border: solid 5px #34495e;
-
+    font-size: 10px;
   }
 
-  @media only screen and (max-width: 200px) {
-    .CatSearch_form button {
-      font-size: 10px;
-    }
-    .CatSearch_form input {
-      font-size: 10px;
-    }
-    .CatSearch {
-      font-size: 10px;
-      margin: auto;
-      height: 100%;
-      width: 100%;
-      display: flex;
-    }
+  .CatSearch_form input {
+    font-size: 10px;
   }
-  
+
+  .CatSearch {
+    font-size: 10px;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+}

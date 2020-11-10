@@ -1,4 +1,7 @@
 /* eslint-disable */
+/* eslint-disable no-case-declarations */
+/* eslint-disable consistent-return */
+
 import React from "react"
 import CatSearch from "./CatSearch"
 import ImageList from "./ImageList"

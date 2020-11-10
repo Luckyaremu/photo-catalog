@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import { render, screen } from './test-utils';
 import ImageList from '../../containers/ImageList';
