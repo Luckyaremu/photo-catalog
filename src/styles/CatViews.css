@@ -1,0 +1,17 @@
+.CatView__container {
+  width: 100%;
+  height: 50%;
+}
+
+.CatView__image {
+  height: 50%;
+  width: 100%;
+  justify-content: center;
+}
+
+.CatView_button {
+  font-size: 30px;
+  background: transparent;
+  border: solid 5px red;
+  margin-top: 10px;
+}
